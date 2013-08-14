@@ -22,6 +22,7 @@ RUN echo JAVA_HOME=$JAVA_HOME >> /etc/environment
 RUN useradd cspace
 RUN echo cspace$'\n'cspace$'\n' | passwd cspace
 
+EXPOSE :8080
 #
 # Install Apache Tomcat 6
 #
