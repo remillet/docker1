@@ -18,7 +18,7 @@ RUN echo 'JAVA_HOME=/usr/lib/jvm/java-7-oracle' >> /etc/environment
 # Create a user named 'cspace'
 #
 RUN useradd cspace
-RUN echo cspace$'\n'cspace | passwd cspace
+RUN echo cspace$'\n'cspace$'\n' | passwd cspace
 
 #
 # Install Apache Tomcat 6
