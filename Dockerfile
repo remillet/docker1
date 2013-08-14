@@ -1,7 +1,7 @@
 FROM base
 MAINTAINER Richard Millet "richard.millet@berkeley.edu"
 
-RUN Installing the Oracle/Sun JDK 7
+RUN echo Installing the Oracle/Sun JDK 7
 RUN apt-get install software-properties-common
 RUN add-apt-repository ppa:webupd8team/java
 RUN apt-get update && sudo apt-get install oracle-jdk7-installer
