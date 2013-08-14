@@ -13,3 +13,14 @@ RUN javac -version
 RUN apt-get install oracle-java7-set-default
 RUN export JAVA_HOME=/usr/lib/jvm/java-7-oracle
 RUN echo 'JAVA_HOME=/usr/lib/jvm/java-7-oracle' >> /etc/environment
+
+#
+# Create a user named 'cspace'
+#
+RUN useradd cspace
+RUN echo cspace$'\n'cspace | passwd cspace
+
+#
+# Install Apache Tomcat 6
+#
+RUN echo y | sudo apt-get install tomcat6
