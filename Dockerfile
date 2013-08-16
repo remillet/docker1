@@ -62,6 +62,12 @@ RUN git clone https://github.com/collectionspace/services.git
 RUN apt-get install -y imagemagick
 
 #
+# Get the CollectionSpace tarball and extract it
+#
+RUN cd /user/local/share
+RUN ftp nightly.collectionspace.org
+
+#
 # Setup the CSpace environment
 #
 CSPACE_JEESERVER_HOME=

@@ -3,7 +3,7 @@ HOST='nightly.collectionspace.org'
 USER='anonymous'
 PASSWD='download@collectionspace.org'
 PATH=pub/collectionspace/releases/$1
-FILE='apache-tomcat-6.0.33-2013-07-09.tar.gz'
+FILE=$2
 
 /usr/bin/ftp -n $HOST <<END_SCRIPT
 quote USER $USER
